@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media screen and (max-width: 360px) {
+  .absolute svg {
+    margin: 0.25em 0em 0em 1.9em;
+  }
+  .relative input {
+    width: 70%;
+    margin-left: 2em;
+    padding: 1em;
+  }
+  .relative input::placeholder {
+    text-align: center;
+  }
+}
