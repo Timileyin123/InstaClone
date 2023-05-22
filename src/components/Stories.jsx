@@ -1,0 +1,34 @@
+"use client";
+import { useState, useEffect } from "react";
+import minifaker from "minifaker";
+import "minifaker/locales/en";
+import Story from "./Story";
+
+export default function Stories() {
+  const [storyUsers, setStoryUsers] = useState([]);
+
+  useEffect(() => {
+    const storyUsers = minifaker.array(20, (i) => {
+      return {
+        username: minifaker.username({ locale: "en" }).toLowerCase(),
+        img: `https://i.pravatar.cc/150?img=${Math.ceil(Math.random() * 70)}`,
+        id: i,
+      };
+    });
+    setStoryUsers(storyUsers);
+    // console.log(storyUsers);
+  }, []);
+  return (
+    <div>
+      {storyUsers.map((storyUser) => {
+        return (
+          <Story
+            key={storyUser.id}
+            img={storyUser.img}
+            username={storyUser.username}
+          />
+        );
+      })}
+    </div>
+  );
+}
