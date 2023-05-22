@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 390px) {
   .absolute svg {
     margin: 0.25em 0em 0em 1.9em;
   }
@@ -13,5 +13,8 @@
   }
   .relative input::placeholder {
     text-align: center;
+  }
+  .stories {
+    overflow-x: scroll;
   }
 }

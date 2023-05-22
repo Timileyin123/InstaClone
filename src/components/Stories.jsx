@@ -19,7 +19,7 @@ export default function Stories() {
     // console.log(storyUsers);
   }, []);
   return (
-    <div>
+    <div className="stories flex space-x-2 p-7 bg-white mt-8 border-gray-200 border">
       {storyUsers.map((storyUser) => {
         return (
           <Story
