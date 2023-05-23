@@ -7,6 +7,9 @@
     @apply h-7 hover:scale-125 transition-transform duration-200 ease-out cursor-pointer;
   }
 }
+.mini {
+  width: 28em;
+}
 @media screen and (max-width: 390px) {
   .absolute svg {
     margin: 0.25em 0em 0em 1.9em;
