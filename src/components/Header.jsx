@@ -68,7 +68,7 @@ export default function Header() {
             <img
               src="https://media.licdn.com/dms/image/C4D03AQEt5MDiNt8vWQ/profile-displayphoto-shrink_200_200/0/1644694755065?e=1688601600&v=beta&t=IzetEnCrzWIRR0FiLDobRhOY5kkaPR7H2QjOEI35Wpg"
               alt="user-image"
-              className="h-10 rounded-full cursor"
+              className="h-10 rounded-full cursor-pointer"
             />
           </div>
         </div>
